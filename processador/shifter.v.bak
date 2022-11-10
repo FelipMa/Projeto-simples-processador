@@ -1,0 +1,21 @@
+module shifter(control, data, dataOut);
+
+parameter shift_left_logical = 8;
+parameter shift_right_arithmetic = 1;
+
+input [1:0] control;
+input [31:0] data;
+output [31:0] dataOut;
+
+always @ (control, data)
+begin
+case (control)
+2'b01: dataOut = data >>> shift_right_arithmetic;
+2'b10: dataOut = data << shift_left_logical;
+default: dataOut = data;
+endcase
+
+end
+
+
+endmodule

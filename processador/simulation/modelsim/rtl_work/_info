@@ -1,0 +1,206 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/simulation/modelsim
+T_opt
+!s110 1668117957
+Vb<13IK4J;Qze5gY26EH9>3
+04 6 4 work cpu_tb fast 0
+=1-d85ed3f19649-636d75c4-24f-45fc
+!s124 OEM10U17 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vbanco_registradores
+Z2 !s110 1668117954
+!i10b 1
+!s100 ]G]k;b@l^<T651UaUWb6n3
+IZ5Mn[k[7:GQL3]LTQ?XYE1
+R0
+w1668115970
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v
+!i122 1
+L0 1 121
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z5 !s108 1668117954.000000
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcpu
+Z8 !s110 1668117955
+!i10b 1
+!s100 :=5njHkTY1jg>Li;QYT2G0
+IWOaklNM3VZdmVL<]NEVgU1
+R0
+w1668112658
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v
+!i122 2
+L0 1 64
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1668117955.000000
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v|
+!i113 0
+R6
+R7
+R1
+vcpu_tb
+R8
+!i10b 1
+!s100 @M5D?7Gj`BY_b9@T^6;X73
+IiF1A_3A7DkVa_XO9W4;FR2
+R0
+w1668115886
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v
+!i122 7
+L0 3 82
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v|
+!i113 0
+R6
+R7
+R1
+vdecod4_16
+R8
+!i10b 1
+!s100 7GfGC^WMVJ8gI=U_^?kWO3
+I8B>U[@A95BU]5icH98?;[2
+R0
+w1668098201
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v
+!i122 3
+L0 1 24
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v|
+!i113 0
+R6
+R7
+R1
+vram
+R8
+!i10b 1
+!s100 h?aF9`CR?JR:][T8D^`iN2
+IPW>U6^LZ500hcP1?Xc3gd0
+R0
+w1668110265
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v
+!i122 6
+L0 1 33
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v|
+!i113 0
+R6
+R7
+R1
+vregister
+R8
+!i10b 1
+!s100 0:a6=gIA9W6<fBl]Q@k]i1
+I4VHU3MlDKVYLN^nG[iN2^1
+R0
+w1668104543
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v
+!i122 4
+L0 1 25
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v|
+!i113 0
+R6
+R7
+R1
+vshifter
+R8
+!i10b 1
+!s100 5Ub>Kc95BDPJ^W_7hb]1h1
+I5`0]j>Tljn9Z^9Vn_7NXU3
+R0
+w1668098183
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v
+!i122 5
+L0 1 15
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v|
+!i113 0
+R6
+R7
+R1
+vula
+R2
+!i10b 1
+!s100 `MnK2Z]78N6dGKEFj<L6G2
+IWVo:eIh_z?eU396hX30JM0
+R0
+w1668097912
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v
+!i122 0
+L0 1 47
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v|
+!i113 0
+R6
+R7
+R1

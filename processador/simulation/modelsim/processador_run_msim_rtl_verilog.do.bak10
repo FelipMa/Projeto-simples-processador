@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/ula.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/banco_registradores.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/cpu.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/decod4_16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/register.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/shifter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/ram.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Projetos\ Quartus/processador {C:/Users/felip/Desktop/Facul/Projetos Quartus/processador/cpu_tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,5 @@
+module decod4_16 (b, s);
+
+input [0:3] b;
+output [15:0] s;
+

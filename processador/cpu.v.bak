@@ -1,0 +1,47 @@
+module cpu (clock, valor_saida);
+
+input clock;
+output [31:0] valor_saida;
+wire [31:0] counter;
+wire [31:0] instrucao;
+wire [31:0] data_ula;
+wire [31:0] valor_regd;
+wire [31:0] valor_reg1;
+wire [31:0] valor_reg2;
+
+pc_counter
+( 
+ clock, 
+ counter
+);
+
+memoria_instrucoes memoria_instrucoes
+(
+ counter, 
+ clock,
+ instrucao
+);
+
+banco_registradores banco_registradores
+(
+ clock,
+ instrucao[26:22],
+ instrucao[21:17],
+ instrucao[16:12],
+ data_ula,
+ valor_regd,
+ valor_reg1, 
+ valor_reg2
+);
+
+ula ula
+(
+ instrucao[31:27],
+ valor_reg1,
+ valor_reg2,
+ data_ula
+);
+
+assign valor_saida = valor_regd;
+
+endmodule

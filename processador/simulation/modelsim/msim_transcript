@@ -1,0 +1,153 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do processador_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/21.1/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:54 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v 
+# -- Compiling module ula
+# 
+# Top level modules:
+# 	ula
+# End time: 19:05:54 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:54 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v 
+# -- Compiling module banco_registradores
+# ** Warning: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v(103): (vlog-2256) Event expressions should result in a singular type.
+# 
+# Top level modules:
+# 	banco_registradores
+# End time: 19:05:54 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:55 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:55 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v 
+# -- Compiling module decod4_16
+# 
+# Top level modules:
+# 	decod4_16
+# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:55 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:55 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v 
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:55 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:05:55 on Nov 10,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v 
+# -- Compiling module cpu_tb
+# 
+# Top level modules:
+# 	cpu_tb
+# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" cpu_tb 
+# Start time: 19:05:56 on Nov 10,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.cpu_tb(fast)
+# Loading work.cpu(fast)
+# Loading work.banco_registradores(fast)
+# Loading work.decod4_16(fast)
+# Loading work.register(fast)
+# Loading work.ram(fast)
+# Loading work.ula(fast)
+# Loading work.shifter(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'data_in'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/PC File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'data_out'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/PC File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'data_in'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/MBR File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 47
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'data_out'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/MBR File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 47
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# write 1 on mar and write mar(1) on addr 0001
+# out_c = 1 -- out_b = z -- out_ram_read = x -- out_ram_write = 1
+# 
+# read addr 0001, write on mdr, enable mdr(1) to b_bus, ula add 1 to b_bus, send to c_bus(2) and write on h and mar
+# out_c = 2 -- out_b = 1 -- out_ram_read = 1 -- out_ram_write = 2
+# 
+# write mar(2) on addr 0010
+# out_c = z -- out_b = z -- out_ram_read = 1 -- out_ram_write = 2
+# 
+# enable mdr(1) to b_bus, perform mdr(1) + h(2), write c_bus(3) on mar
+# out_c = 3 -- out_b = 1 -- out_ram_read = 1 -- out_ram_write = 3
+# 
+# write mar on addr 0011
+# out_c = z -- out_b = z -- out_ram_read = 1 -- out_ram_write = 3
+# 
+# End time: 19:06:56 on Nov 10,2022, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 4
