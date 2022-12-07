@@ -22,7 +22,7 @@ A microinstrução, de 28 bits, tem o seguinte formato:
 - 4 bits que habilitam os registradores para escrever no barramento b
 
 Funções específicas dos registradores:
-(Os nome dos registradores não necessáriamente condizem com sua função)
+(Os nomes dos registradores não necessáriamente condizem com sua função)
 
 - MAR é específico para receber o endereço da memória (ram_addr), é importante que ele esteja habilitado para receber dados (in_enable) sempre que se quiser ler ou escrever na memória. Ele recebe diretamente da instrução o endereço e o envia para a memória.
 
