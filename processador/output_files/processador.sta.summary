@@ -3,110 +3,110 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -7.456
-TNS   : -437.957
+Slack : -9.805
+TNS   : -1943.962
 
-Type  : Slow 1200mV 85C Model Setup 'banco_registradores:registers|register:MBR|data[0]'
-Slack : -3.684
-TNS   : -105.466
+Type  : Slow 1200mV 85C Model Setup 'banco_registradores:registers|register:PC|data[0]'
+Slack : -2.952
+TNS   : -87.811
 
-Type  : Slow 1200mV 85C Model Setup 'banco_registradores:registers|register:MBR|data[1]'
-Slack : -0.401
-TNS   : -0.401
+Type  : Slow 1200mV 85C Model Setup 'banco_registradores:registers|register:PC|data[1]'
+Slack : -0.192
+TNS   : -0.192
 
-Type  : Slow 1200mV 85C Model Hold 'banco_registradores:registers|register:MBR|data[1]'
-Slack : 0.340
+Type  : Slow 1200mV 85C Model Hold 'banco_registradores:registers|register:PC|data[1]'
+Slack : 0.289
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.700
+Slack : 0.606
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'banco_registradores:registers|register:MBR|data[0]'
-Slack : 3.184
+Type  : Slow 1200mV 85C Model Hold 'banco_registradores:registers|register:PC|data[0]'
+Slack : 2.933
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -108.174
+TNS   : -273.174
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'banco_registradores:registers|register:MBR|data[1]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'banco_registradores:registers|register:PC|data[1]'
 Slack : -2.174
 TNS   : -4.348
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'banco_registradores:registers|register:MBR|data[0]'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'banco_registradores:registers|register:PC|data[0]'
 Slack : -1.000
 TNS   : -32.000
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -6.621
-TNS   : -381.594
+Slack : -8.655
+TNS   : -1714.744
 
-Type  : Slow 1200mV 0C Model Setup 'banco_registradores:registers|register:MBR|data[0]'
-Slack : -3.243
-TNS   : -92.679
+Type  : Slow 1200mV 0C Model Setup 'banco_registradores:registers|register:PC|data[0]'
+Slack : -2.566
+TNS   : -76.642
 
-Type  : Slow 1200mV 0C Model Setup 'banco_registradores:registers|register:MBR|data[1]'
-Slack : -0.295
-TNS   : -0.295
+Type  : Slow 1200mV 0C Model Setup 'banco_registradores:registers|register:PC|data[1]'
+Slack : -0.127
+TNS   : -0.127
 
-Type  : Slow 1200mV 0C Model Hold 'banco_registradores:registers|register:MBR|data[1]'
-Slack : 0.360
+Type  : Slow 1200mV 0C Model Hold 'banco_registradores:registers|register:PC|data[1]'
+Slack : 0.316
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.613
+Slack : 0.521
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'banco_registradores:registers|register:MBR|data[0]'
-Slack : 2.871
+Type  : Slow 1200mV 0C Model Hold 'banco_registradores:registers|register:PC|data[0]'
+Slack : 2.644
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -108.174
+TNS   : -273.174
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:MBR|data[1]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:PC|data[1]'
 Slack : -2.174
 TNS   : -4.348
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:MBR|data[0]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:PC|data[0]'
 Slack : -1.000
 TNS   : -32.000
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -3.873
-TNS   : -220.770
+Slack : -5.279
+TNS   : -1036.814
 
-Type  : Fast 1200mV 0C Model Setup 'banco_registradores:registers|register:MBR|data[0]'
-Slack : -1.484
-TNS   : -40.120
+Type  : Fast 1200mV 0C Model Setup 'banco_registradores:registers|register:PC|data[0]'
+Slack : -1.057
+TNS   : -29.721
 
-Type  : Fast 1200mV 0C Model Setup 'banco_registradores:registers|register:MBR|data[1]'
-Slack : 0.121
+Type  : Fast 1200mV 0C Model Setup 'banco_registradores:registers|register:PC|data[1]'
+Slack : 0.219
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'banco_registradores:registers|register:MBR|data[1]'
-Slack : 0.181
+Type  : Fast 1200mV 0C Model Hold 'banco_registradores:registers|register:PC|data[1]'
+Slack : 0.142
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.312
+Slack : 0.276
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'banco_registradores:registers|register:MBR|data[0]'
-Slack : 1.517
+Type  : Fast 1200mV 0C Model Hold 'banco_registradores:registers|register:PC|data[0]'
+Slack : 1.378
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -113.480
+TNS   : -290.513
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:MBR|data[0]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:PC|data[0]'
 Slack : -1.000
 TNS   : -32.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:MBR|data[1]'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'banco_registradores:registers|register:PC|data[1]'
 Slack : -1.000
 TNS   : -2.000
 

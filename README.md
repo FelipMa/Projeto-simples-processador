@@ -5,10 +5,10 @@ A cpu recebe dois inputs:
 2 - mir (micro instruction register)
 
 E quatro outputs:
-1 - out_c (olha o barramento c)
-2 - out_b (olha o barramento b)
-3 - out_ram_read (olha dados lidos da ram)
-4 - out_ram_write (olha dados escritos da ram)
+1 - on_c (olha o barramento c)
+2 - on_b (olha o barramento b)
+3 - on_ram_read (olha dados lidos da ram)
+4 - on_ram_write (olha dados escritos da ram)
 
 A microinstrução, de 28 bits, tem o seguinte formato:
 
@@ -22,14 +22,15 @@ A microinstrução, de 28 bits, tem o seguinte formato:
 - 4 bits que habilitam os registradores para escrever no barramento b
 
 Funções específicas dos registradores:
+(Os nome dos registradores não necessáriamente condizem com sua função)
 
-- MAR é específico para escrever na memória, ele está sempre habilitado enviar dados, a escrita depende do sinal recebido pela ram (write_enable). Ele recebe dados do barramento C e envia para a memória.
+- MAR é específico para receber o endereço da memória (ram_addr), é importante que ele esteja habilitado para receber dados (in_enable) sempre que se quiser ler ou escrever na memória. Ele recebe diretamente da instrução o endereço e o envia para a memória.
 
 - MDR é específico para ler dados da memória, para ler, é necessário dois sinais habilitadores, um recebido pela ram (read_enable) e outro para que o registrador receba a informação (in_enable). Ele recebe dados da memória e envia para o barramento B.
 
-- PC é específico para receber o endereço da memória (ram_addr), é importante que ele esteja habilitado para receber dados (in_enable) sempre que se quiser ler ou escrever na memória. Ele recebe diretamente da instrução o endereço e o envia para a memória.
+- PC é específico para receber o sinal que habilita a memória (ram_wr_enable), é importante que ele esteja habilitado para receber dados (in_enable) sempre que se quiser ler ou escrever na memória. Ele recebe diretamente da instrução o sinal e o envia para a memória.
 
-- MBR é específico para receber o sinal que habilita a memória (ram_wr_enable), é importante que ele esteja habilitado para receber dados (in_enable) sempre que se quiser ler ou escrever na memória. Ele recebe diretamente da instrução o sinal e o envia para a memória.
+- MBR é específico para escrever na memória, ele está sempre habilitado enviar dados, a escrita depende do sinal recebido pela ram (write_enable). Ele recebe dados do barramento C e envia para a memória.
 
 - Os outros registradores funcionam na mesma forma, recebem informações o barramento C e enviam para o barramento B, exceto o registrador H, está sempre habilitado para enviar dados para a entrada A da ula.
 

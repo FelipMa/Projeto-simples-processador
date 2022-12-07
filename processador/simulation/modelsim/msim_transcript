@@ -26,90 +26,89 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:54 on Nov 10,2022
+# Start time: 01:45:29 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v 
 # -- Compiling module ula
 # 
 # Top level modules:
 # 	ula
-# End time: 19:05:54 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:29 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:54 on Nov 10,2022
+# Start time: 01:45:29 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v 
 # -- Compiling module banco_registradores
-# ** Warning: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v(103): (vlog-2256) Event expressions should result in a singular type.
 # 
 # Top level modules:
 # 	banco_registradores
-# End time: 19:05:54 on Nov 10,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 01:45:29 on Dec 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:55 on Nov 10,2022
+# Start time: 01:45:29 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v 
 # -- Compiling module cpu
 # 
 # Top level modules:
 # 	cpu
-# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:30 on Dec 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:55 on Nov 10,2022
+# Start time: 01:45:30 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v 
 # -- Compiling module decod4_16
 # 
 # Top level modules:
 # 	decod4_16
-# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:30 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:55 on Nov 10,2022
+# Start time: 01:45:30 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v 
 # -- Compiling module register
 # 
 # Top level modules:
 # 	register
-# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:30 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:55 on Nov 10,2022
+# Start time: 01:45:30 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v 
 # -- Compiling module shifter
 # 
 # Top level modules:
 # 	shifter
-# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:30 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:55 on Nov 10,2022
+# Start time: 01:45:30 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:30 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:05:55 on Nov 10,2022
+# Start time: 01:45:30 on Dec 07,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador" C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v 
 # -- Compiling module cpu_tb
 # 
 # Top level modules:
 # 	cpu_tb
-# End time: 19:05:55 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 01:45:30 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" cpu_tb 
-# Start time: 19:05:56 on Nov 10,2022
+# Start time: 01:45:30 on Dec 07,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.cpu_tb(fast)
 # Loading work.cpu(fast)
@@ -120,13 +119,13 @@
 # Loading work.ula(fast)
 # Loading work.shifter(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'data_in'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/PC File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 40
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/MAR File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 24
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'data_out'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/PC File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 40
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/MAR File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 24
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'data_in'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/MBR File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 47
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/PC File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 40
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'data_out'. The port definition is at: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/MBR File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 47
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/dut/registers/PC File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v Line: 40
 # 
 # add wave *
 # view structure
@@ -134,20 +133,32 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# write 1 on mar and write mar(1) on addr 0001
-# out_c = 1 -- out_b = z -- out_ram_read = x -- out_ram_write = 1
+# save 1 on mbr
+# on_c = 1 -- on_b = z -- on_ram_read = x -- on_ram_write = 1
 # 
-# read addr 0001, write on mdr, enable mdr(1) to b_bus, ula add 1 to b_bus, send to c_bus(2) and write on h and mar
-# out_c = 2 -- out_b = 1 -- out_ram_read = 1 -- out_ram_write = 2
+# write mbr(1) on memory addr 0001
+# on_c = z -- on_b = z -- on_ram_read = x -- on_ram_write = 1
 # 
-# write mar(2) on addr 0010
-# out_c = z -- out_b = z -- out_ram_read = 1 -- out_ram_write = 2
+# read memory addr 0001 (1), data goes to mdr after two clocks
+# on_c = z -- on_b = z -- on_ram_read = 1 -- on_ram_write = 1
 # 
-# enable mdr(1) to b_bus, perform mdr(1) + h(2), write c_bus(3) on mar
-# out_c = 3 -- out_b = 1 -- out_ram_read = 1 -- out_ram_write = 3
+# enable mdr(1) to b_bus, increment, and save on H and mbr registers, after two clocks
+# on_c = 2 -- on_b = 1 -- on_ram_read = 1 -- on_ram_write = 2
 # 
-# write mar on addr 0011
-# out_c = z -- out_b = z -- out_ram_read = 1 -- out_ram_write = 3
+# write mbr(2) on memory addr 0010
+# on_c = z -- on_b = z -- on_ram_read = 1 -- on_ram_write = 2
 # 
-# End time: 19:06:56 on Nov 10,2022, Elapsed time: 0:01:00
+# read memory addr 0010 (2), data goes to mdr after two clocks
+# on_c = z -- on_b = z -- on_ram_read = 2 -- on_ram_write = 2
+# 
+# enable mdr(2) to b_bus, perform H(2) + mdr(2), and save on mbr, after two clocks
+# on_c = 4 -- on_b = 2 -- on_ram_read = 2 -- on_ram_write = 4
+# 
+# write mbr(4) on memory addr 0100
+# on_c = z -- on_b = z -- on_ram_read = 2 -- on_ram_write = 4
+# 
+# read memory addr 0100 (4), data goes to mdr after two clocks
+# on_c = z -- on_b = z -- on_ram_read = 4 -- on_ram_write = 4
+# 
+# End time: 01:45:40 on Dec 07,2022, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 4

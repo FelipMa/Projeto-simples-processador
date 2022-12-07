@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processador
-Thu Nov 10 19:05:17 2022
+Wed Dec  7 01:44:35 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -21,19 +21,14 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
  13. Parameter Settings for Inferred Entity Instance: ram:ram_mem|altsyncram:memory_rtl_0
  14. altsyncram Parameter Settings by Entity Instance
  15. Port Connectivity Checks: "banco_registradores:registers|register:H"
- 16. Port Connectivity Checks: "banco_registradores:registers|register:OPC"
- 17. Port Connectivity Checks: "banco_registradores:registers|register:TOS"
- 18. Port Connectivity Checks: "banco_registradores:registers|register:CPP"
- 19. Port Connectivity Checks: "banco_registradores:registers|register:LV"
- 20. Port Connectivity Checks: "banco_registradores:registers|register:SP"
- 21. Port Connectivity Checks: "banco_registradores:registers|register:MBR"
- 22. Port Connectivity Checks: "banco_registradores:registers|register:PC"
- 23. Port Connectivity Checks: "banco_registradores:registers|register:MAR"
- 24. Port Connectivity Checks: "banco_registradores:registers|decod4_16:decod"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+ 16. Port Connectivity Checks: "banco_registradores:registers|register:MBR"
+ 17. Port Connectivity Checks: "banco_registradores:registers|register:PC"
+ 18. Port Connectivity Checks: "banco_registradores:registers|register:MAR"
+ 19. Port Connectivity Checks: "banco_registradores:registers|decod4_16:decod"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -60,15 +55,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 10 19:05:17 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec  7 01:44:35 2022       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; processador                                 ;
 ; Top-level Entity Name              ; cpu                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 651                                         ;
-;     Total combinational functions  ; 549                                         ;
-;     Dedicated logic registers      ; 135                                         ;
-; Total registers                    ; 135                                         ;
+; Total logic elements               ; 927                                         ;
+;     Total combinational functions  ; 665                                         ;
+;     Dedicated logic registers      ; 300                                         ;
+; Total registers                    ; 300                                         ;
 ; Total pins                         ; 157                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 512                                         ;
@@ -175,7 +170,9 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -209,20 +206,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 651         ;
+; Estimated Total logic elements              ; 927         ;
 ;                                             ;             ;
-; Total combinational functions               ; 549         ;
+; Total combinational functions               ; 665         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 357         ;
-;     -- 3 input functions                    ; 153         ;
-;     -- <=2 input functions                  ; 39          ;
+;     -- 4 input functions                    ; 481         ;
+;     -- 3 input functions                    ; 171         ;
+;     -- <=2 input functions                  ; 13          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 486         ;
+;     -- normal mode                          ; 602         ;
 ;     -- arithmetic mode                      ; 63          ;
 ;                                             ;             ;
-; Total registers                             ; 135         ;
-;     -- Dedicated logic registers            ; 135         ;
+; Total registers                             ; 300         ;
+;     -- Dedicated logic registers            ; 300         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 157         ;
@@ -231,9 +228,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 135         ;
-; Total fan-out                               ; 3038        ;
-; Average fan-out                             ; 2.95        ;
+; Maximum fan-out                             ; 300         ;
+; Total fan-out                               ; 4026        ;
+; Average fan-out                             ; 3.07        ;
 +---------------------------------------------+-------------+
 
 
@@ -242,19 +239,24 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+---------------------+--------------+
-; |cpu                                      ; 549 (0)             ; 135 (0)                   ; 512         ; 0            ; 0       ; 0         ; 157  ; 0            ; |cpu                                                                    ; cpu                 ; work         ;
-;    |banco_registradores:registers|        ; 33 (0)              ; 103 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers                                      ; banco_registradores ; work         ;
-;       |decod4_16:decod|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|decod4_16:decod                      ; decod4_16           ; work         ;
+; |cpu                                      ; 665 (0)             ; 300 (0)                   ; 512         ; 0            ; 0       ; 0         ; 157  ; 0            ; |cpu                                                                    ; cpu                 ; work         ;
+;    |banco_registradores:registers|        ; 168 (0)             ; 268 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers                                      ; banco_registradores ; work         ;
+;       |decod4_16:decod|                   ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|decod4_16:decod                      ; decod4_16           ; work         ;
+;       |register:CPP|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:CPP                         ; register            ; work         ;
 ;       |register:H|                        ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:H                           ; register            ; work         ;
-;       |register:MAR|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:MAR                         ; register            ; work         ;
-;       |register:MBR|                      ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:MBR                         ; register            ; work         ;
-;       |register:MDR|                      ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:MDR                         ; register            ; work         ;
-;       |register:PC|                       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:PC                          ; register            ; work         ;
+;       |register:LV|                       ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:LV                          ; register            ; work         ;
+;       |register:MAR|                      ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:MAR                         ; register            ; work         ;
+;       |register:MBR|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:MBR                         ; register            ; work         ;
+;       |register:MDR|                      ; 162 (162)           ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:MDR                         ; register            ; work         ;
+;       |register:OPC|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:OPC                         ; register            ; work         ;
+;       |register:PC|                       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:PC                          ; register            ; work         ;
+;       |register:SP|                       ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:SP                          ; register            ; work         ;
+;       |register:TOS|                      ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|banco_registradores:registers|register:TOS                         ; register            ; work         ;
 ;    |ram:ram_mem|                          ; 0 (0)               ; 32 (32)                   ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ram:ram_mem                                                        ; ram                 ; work         ;
 ;       |altsyncram:memory_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ram:ram_mem|altsyncram:memory_rtl_0                                ; altsyncram          ; work         ;
 ;          |altsyncram_tee1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated ; altsyncram_tee1     ; work         ;
-;    |shifter:shifter|                      ; 142 (142)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|shifter:shifter                                                    ; shifter             ; work         ;
-;    |ula:alu|                              ; 374 (374)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ula:alu                                                            ; ula                 ; work         ;
+;    |shifter:shifter|                      ; 148 (148)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|shifter:shifter                                                    ; shifter             ; work         ;
+;    |ula:alu|                              ; 349 (349)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu|ula:alu                                                            ; ula                 ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -273,12 +275,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 135   ;
+; Total registers                              ; 300   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 102   ;
+; Number of registers using Clock Enable       ; 262   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -406,53 +408,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+--------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:OPC"                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:TOS"                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:CPP"                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:LV"                                              ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:SP"                                              ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "banco_registradores:registers|register:MBR" ;
++------------+-------+----------+----------------------------------------+
+; Port       ; Type  ; Severity ; Details                                ;
++------------+-------+----------+----------------------------------------+
+; out_enable ; Input ; Info     ; Stuck at VCC                           ;
++------------+-------+----------+----------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:MBR"                                                                                                             ;
+; Port Connectivity Checks: "banco_registradores:registers|register:PC"                                                                                                              ;
 +------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                                                           ;
 +------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -463,7 +429,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:PC"                                                                                                              ;
+; Port Connectivity Checks: "banco_registradores:registers|register:MAR"                                                                                                             ;
 +------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                                                                                           ;
 +------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -471,15 +437,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; out_enable ; Input  ; Info     ; Stuck at VCC                                                                                                                                      ;
 ; data_out   ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (4 bits) it drives; bit(s) "data_out[31..4]" have no fanouts                     ;
 +------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "banco_registradores:registers|register:MAR" ;
-+------------+-------+----------+----------------------------------------+
-; Port       ; Type  ; Severity ; Details                                ;
-+------------+-------+----------+----------------------------------------+
-; out_enable ; Input ; Info     ; Stuck at VCC                           ;
-+------------+-------+----------+----------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -499,22 +456,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 157                         ;
-; cycloneiii_ff         ; 135                         ;
-;     ENA               ; 102                         ;
-;     plain             ; 33                          ;
+; cycloneiii_ff         ; 300                         ;
+;     ENA               ; 262                         ;
+;     plain             ; 38                          ;
 ; cycloneiii_io_obuf    ; 32                          ;
-; cycloneiii_lcell_comb ; 549                         ;
+; cycloneiii_lcell_comb ; 665                         ;
 ;     arith             ; 63                          ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 62                          ;
-;     normal            ; 486                         ;
-;         2 data inputs ; 38                          ;
-;         3 data inputs ; 91                          ;
-;         4 data inputs ; 357                         ;
+;     normal            ; 602                         ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 109                         ;
+;         4 data inputs ; 481                         ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.50                       ;
-; Average LUT depth     ; 6.72                        ;
+; Max LUT depth         ; 14.30                       ;
+; Average LUT depth     ; 9.19                        ;
 +-----------------------+-----------------------------+
 
 
@@ -523,7 +480,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -533,7 +490,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Thu Nov 10 19:05:03 2022
+    Info: Processing started: Wed Dec  7 01:44:25 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processador -c processador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -598,12 +555,12 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:H|data_out[29]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
     Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:H|data_out[30]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
     Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:H|data_out[31]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:MBR|data_out[0]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:MBR|data_out[1]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
     Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:PC|data_out[0]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
     Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:PC|data_out[1]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:PC|data_out[2]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:PC|data_out[3]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:MAR|data_out[0]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:MAR|data_out[1]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:MAR|data_out[2]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13049): Converted tri-state buffer "banco_registradores:registers|register:MAR|data_out[3]" feeding internal logic into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
 Warning (276027): Inferred dual-clock RAM node "ram:ram_mem|memory_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "ram:ram_mem|memory_rtl_0" 
@@ -641,70 +598,70 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_tee1 File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/db/altsyncram_tee1.tdf Line: 28
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13044): Always-enabled tri-state buffer(s) removed
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[0]" to the node "out_ram_write[0]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[1]" to the node "out_ram_write[1]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[2]" to the node "out_ram_write[2]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[3]" to the node "out_ram_write[3]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[4]" to the node "out_ram_write[4]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[5]" to the node "out_ram_write[5]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[6]" to the node "out_ram_write[6]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[7]" to the node "out_ram_write[7]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[8]" to the node "out_ram_write[8]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[9]" to the node "out_ram_write[9]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[10]" to the node "out_ram_write[10]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[11]" to the node "out_ram_write[11]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[12]" to the node "out_ram_write[12]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[13]" to the node "out_ram_write[13]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[14]" to the node "out_ram_write[14]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[15]" to the node "out_ram_write[15]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[16]" to the node "out_ram_write[16]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[17]" to the node "out_ram_write[17]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[18]" to the node "out_ram_write[18]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[19]" to the node "out_ram_write[19]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[20]" to the node "out_ram_write[20]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[21]" to the node "out_ram_write[21]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[22]" to the node "out_ram_write[22]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[23]" to the node "out_ram_write[23]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[24]" to the node "out_ram_write[24]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[25]" to the node "out_ram_write[25]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[26]" to the node "out_ram_write[26]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[27]" to the node "out_ram_write[27]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[28]" to the node "out_ram_write[28]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[29]" to the node "out_ram_write[29]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[30]" to the node "out_ram_write[30]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[31]" to the node "out_ram_write[31]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[0]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a0" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[1]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a1" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[2]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a2" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[3]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a3" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[4]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a4" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[5]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a5" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[6]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a6" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[7]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a7" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[8]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a8" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[9]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a9" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[10]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a10" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[11]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a11" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[12]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a12" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[13]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a13" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[14]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a14" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[15]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a15" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[16]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a16" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[17]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a17" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[18]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a18" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[19]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a19" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[20]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a20" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[21]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a21" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[22]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a22" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[23]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a23" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[24]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a24" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[25]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a25" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[26]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a26" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[27]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a27" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[28]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a28" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[29]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a29" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[30]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a30" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
-    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MAR|data_out[31]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a31" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[0]" to the node "on_ram_write[0]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[1]" to the node "on_ram_write[1]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[2]" to the node "on_ram_write[2]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[3]" to the node "on_ram_write[3]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[4]" to the node "on_ram_write[4]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[5]" to the node "on_ram_write[5]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[6]" to the node "on_ram_write[6]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[7]" to the node "on_ram_write[7]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[8]" to the node "on_ram_write[8]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[9]" to the node "on_ram_write[9]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[10]" to the node "on_ram_write[10]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[11]" to the node "on_ram_write[11]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[12]" to the node "on_ram_write[12]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[13]" to the node "on_ram_write[13]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[14]" to the node "on_ram_write[14]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[15]" to the node "on_ram_write[15]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[16]" to the node "on_ram_write[16]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[17]" to the node "on_ram_write[17]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[18]" to the node "on_ram_write[18]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[19]" to the node "on_ram_write[19]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[20]" to the node "on_ram_write[20]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[21]" to the node "on_ram_write[21]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[22]" to the node "on_ram_write[22]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[23]" to the node "on_ram_write[23]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[24]" to the node "on_ram_write[24]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[25]" to the node "on_ram_write[25]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[26]" to the node "on_ram_write[26]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[27]" to the node "on_ram_write[27]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[28]" to the node "on_ram_write[28]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[29]" to the node "on_ram_write[29]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[30]" to the node "on_ram_write[30]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[31]" to the node "on_ram_write[31]" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[0]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a0" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[1]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a1" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[2]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a2" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[3]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a3" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[4]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a4" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[5]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a5" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[6]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a6" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[7]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a7" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[8]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a8" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[9]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a9" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[10]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a10" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[11]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a11" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[12]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a12" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[13]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a13" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[14]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a14" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[15]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a15" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[16]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a16" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[17]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a17" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[18]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a18" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[19]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a19" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[20]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a20" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[21]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a21" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[22]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a22" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[23]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a23" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[24]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a24" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[25]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a25" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[26]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a26" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[27]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a27" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[28]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a28" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[29]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a29" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[30]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a30" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "banco_registradores:registers|register:MBR|data_out[31]" to the node "ram:ram_mem|altsyncram:memory_rtl_0|altsyncram_tee1:auto_generated|ram_block1a31" into a wire File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "banco_registradores:registers|register:MDR|data_out[0]" to the node "ula:alu|data_out" into an OR gate File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
     Warning (13047): Converted the fan-out from the tri-state buffer "banco_registradores:registers|register:MDR|data_out[1]" to the node "ula:alu|data_out" into an OR gate File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v Line: 7
@@ -742,21 +699,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/output_files/processador.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "mir[8]" File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v Line: 4
-    Warning (15610): No output dependent on input pin "mir[9]" File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v Line: 4
-    Warning (15610): No output dependent on input pin "mir[10]" File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v Line: 4
-    Warning (15610): No output dependent on input pin "mir[11]" File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v Line: 4
-    Warning (15610): No output dependent on input pin "mir[12]" File: C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu.v Line: 4
-Info (21057): Implemented 872 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1148 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 29 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 683 logic cells
+    Info (21061): Implemented 959 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 150 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Thu Nov 10 19:05:17 2022
-    Info: Elapsed time: 00:00:14
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 144 warnings
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Wed Dec  7 01:44:35 2022
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:22
 
 

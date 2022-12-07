@@ -1,8 +1,8 @@
-module cpu (clock, mir, out_c, out_b, out_ram_read, out_ram_write);
+module cpu (clock, mir, on_c, on_b, on_ram_read, on_ram_write);
 
 input clock;
 input [27:0] mir; // 00_000000_00_0000_0000000000_0000 - 2shif + 6ula + 2wr + 4addr + 10c + 4b = 28
-output reg [31:0] out_c, out_b, out_ram_read, out_ram_write;
+output reg [31:0] on_c, on_b, on_ram_read, on_ram_write;
 
 
 wire [31:0] dataout_ula;
@@ -25,9 +25,9 @@ banco_registradores registers(
  .ram_wr_enable(mir[19:18]),
  .bbus_out(b_bus),
  .h_out(h_bus), 
- .mar_data(ram_data_write),
- .pc_data(ram_address),
- .mbr_data(ram_wr_sig)
+ .mar_data(ram_address),
+ .pc_data(ram_wr_sig),
+ .mbr_data(ram_data_write)
 );
 
 ram ram_mem(
@@ -55,10 +55,10 @@ shifter shifter(
 
 always @ (clock)
 begin
-out_c <= c_bus;
-out_b <= b_bus;
-out_ram_read <= ram_data_read;
-out_ram_write <= ram_data_write;
+on_c <= c_bus;
+on_b <= b_bus;
+on_ram_read <= ram_data_read;
+on_ram_write <= ram_data_write;
 end
 
 endmodule
