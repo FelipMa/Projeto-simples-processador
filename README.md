@@ -51,3 +51,16 @@ O deslocador (shifter), opera o dado recebido da ula e o envia para o barramento
 Função da memória:
 
 Armazenar os dados recebidos pelo MAR em um endereço específico (recebido pelo PC).
+
+IMPLEMENTAÇÃO DO PROCESSADOR NA FPGA
+
+As nove microinstruções da testbench serão atribuídas a nove chaves da FPGA.
+Uma chave específica será atribuída ao clock.
+
+as leds 1, 2 e 3 indicarão os três bits menos significativos do barramento c.
+
+as leds 4, 5, 6 indicarão os três bits menos significativos do barramento b.
+
+as leds 7, 8 e 9 indicarão os três bits menos significativos do que está sendo lido da memória.
+
+as leds 10, 11 e 12 indicarão os três bits menos significativos do que está sendo escrito na memória.

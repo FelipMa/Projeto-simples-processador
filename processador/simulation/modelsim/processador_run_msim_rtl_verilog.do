@@ -12,10 +12,11 @@ vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_p
 vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v}
 vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v}
 vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador {C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga_tb.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  cpu_fpga_tb
 
 add wave *
 view structure

@@ -11,17 +11,17 @@ z2
 cModel Technology
 Z0 dC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/simulation/modelsim
 T_opt
-!s110 1670388331
-V?;40LEC`A<Z[jAhhEUJ_23
-04 6 4 work cpu_tb fast 0
-=1-d85ed3f19649-63901a6b-fc-42ac
-!s124 OEM10U17 
+!s110 1670811050
+VnoQ;`hWKP3a1T=^3J9Cmd3
+04 11 4 work cpu_fpga_tb fast 0
+=1-d85ed3f19649-63968da9-1a2-427c
+!s124 OEM10U18 
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2021.2;73
 vbanco_registradores
-Z2 !s110 1670388329
+Z2 !s110 1670811048
 !i10b 1
 !s100 [JiFcE;H>k]C8_I;ecRnj3
 IHmbET7o3]b]z@o@h<z9zJ3
@@ -36,7 +36,7 @@ Z4 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z5 !s108 1670388329.000000
+Z5 !s108 1670811048.000000
 !s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/banco_registradores.v|
 !i113 0
@@ -44,7 +44,7 @@ Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -
 Z7 !s92 -vlog01compat -work work +incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vcpu
-Z8 !s110 1670388330
+R2
 !i10b 1
 !s100 jYM8;L@_IjT?gIo?U:ZWL3
 IT8QN4_VekiAm89Z:XQhlI1
@@ -66,31 +66,54 @@ R5
 R6
 R7
 R1
-vcpu_tb
-R8
+vcpu_fpga
+R2
 !i10b 1
-!s100 KKncVZ1fkBP>W>h?z^98B2
-I]2m2<ZW0@mAnOlWM2BOg82
+!s100 z2g3fFe==lN`m>[l1A50W0
+I5?OjF]USP<jl;[C4:T0>G3
 R0
-w1670386434
-8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v
-FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v
+w1670810978
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga.v
 !i122 7
-L0 3 109
+L0 1 45
 R3
 R4
 r1
 !s85 0
 31
-Z9 !s108 1670388330.000000
-!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_tb.v|
+R5
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga.v|
+!i113 0
+R6
+R7
+R1
+vcpu_fpga_tb
+!s110 1670811049
+!i10b 1
+!s100 HONlaQ_``2RFNPmo@2k7`0
+IMe9_knkPDjP_L8j>ID5CC0
+R0
+w1670811007
+8C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga_tb.v
+FC:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga_tb.v
+!i122 8
+L0 3 123
+R3
+R4
+r1
+!s85 0
+31
+!s108 1670811049.000000
+!s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/cpu_fpga_tb.v|
 !i113 0
 R6
 R7
 R1
 vdecod4_16
-R8
+R2
 !i10b 1
 !s100 7GfGC^WMVJ8gI=U_^?kWO3
 I8B>U[@A95BU]5icH98?;[2
@@ -105,7 +128,7 @@ R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/decod4_16.v|
 !i113 0
@@ -113,7 +136,7 @@ R6
 R7
 R1
 vram
-R8
+R2
 !i10b 1
 !s100 h?aF9`CR?JR:][T8D^`iN2
 IPW>U6^LZ500hcP1?Xc3gd0
@@ -128,7 +151,7 @@ R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ram.v|
 !i113 0
@@ -136,7 +159,7 @@ R6
 R7
 R1
 vregister
-R8
+R2
 !i10b 1
 !s100 0:a6=gIA9W6<fBl]Q@k]i1
 I4VHU3MlDKVYLN^nG[iN2^1
@@ -151,7 +174,7 @@ R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/register.v|
 !i113 0
@@ -159,7 +182,7 @@ R6
 R7
 R1
 vshifter
-R8
+R2
 !i10b 1
 !s100 5Ub>Kc95BDPJ^W_7hb]1h1
 I5`0]j>Tljn9Z^9Vn_7NXU3
@@ -174,7 +197,7 @@ R4
 r1
 !s85 0
 31
-R9
+R5
 !s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/shifter.v|
 !i113 0
@@ -182,7 +205,7 @@ R6
 R7
 R1
 vula
-R2
+!s110 1670811047
 !i10b 1
 !s100 `MnK2Z]78N6dGKEFj<L6G2
 IWVo:eIh_z?eU396hX30JM0
@@ -197,7 +220,7 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1670811047.000000
 !s107 C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/felip/Desktop/Facul/Repositorio_processador/processador|C:/Users/felip/Desktop/Facul/Repositorio_processador/processador/ula.v|
 !i113 0

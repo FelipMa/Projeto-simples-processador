@@ -1,4 +1,29 @@
-|cpu
+|cpu_fpga
+clk => clk.IN1
+s1 => Decoder0.IN0
+s2 => Decoder0.IN1
+s3 => Decoder0.IN2
+s4 => Decoder0.IN3
+s5 => Decoder0.IN4
+s6 => Decoder0.IN5
+s7 => Decoder0.IN6
+s8 => Decoder0.IN7
+s9 => Decoder0.IN8
+led1 <= cpu:dut.on_c
+led2 <= cpu:dut.on_c
+led3 <= cpu:dut.on_c
+led4 <= cpu:dut.on_b
+led5 <= cpu:dut.on_b
+led6 <= cpu:dut.on_b
+led7 <= cpu:dut.on_ram_read
+led8 <= cpu:dut.on_ram_read
+led9 <= cpu:dut.on_ram_read
+led10 <= cpu:dut.on_ram_write
+led11 <= cpu:dut.on_ram_write
+led12 <= cpu:dut.on_ram_write
+
+
+|cpu_fpga|cpu:dut
 clock => clock.IN1
 mir[0] => mir[0].IN1
 mir[1] => mir[1].IN1
@@ -28,137 +53,137 @@ mir[24] => mir[24].IN1
 mir[25] => mir[25].IN1
 mir[26] => mir[26].IN1
 mir[27] => mir[27].IN1
-on_c[0] << c_bus[0].DB_MAX_OUTPUT_PORT_TYPE
-on_c[1] << c_bus[1].DB_MAX_OUTPUT_PORT_TYPE
-on_c[2] << c_bus[2].DB_MAX_OUTPUT_PORT_TYPE
-on_c[3] << c_bus[3].DB_MAX_OUTPUT_PORT_TYPE
-on_c[4] << c_bus[4].DB_MAX_OUTPUT_PORT_TYPE
-on_c[5] << c_bus[5].DB_MAX_OUTPUT_PORT_TYPE
-on_c[6] << c_bus[6].DB_MAX_OUTPUT_PORT_TYPE
-on_c[7] << c_bus[7].DB_MAX_OUTPUT_PORT_TYPE
-on_c[8] << c_bus[8].DB_MAX_OUTPUT_PORT_TYPE
-on_c[9] << c_bus[9].DB_MAX_OUTPUT_PORT_TYPE
-on_c[10] << c_bus[10].DB_MAX_OUTPUT_PORT_TYPE
-on_c[11] << c_bus[11].DB_MAX_OUTPUT_PORT_TYPE
-on_c[12] << c_bus[12].DB_MAX_OUTPUT_PORT_TYPE
-on_c[13] << c_bus[13].DB_MAX_OUTPUT_PORT_TYPE
-on_c[14] << c_bus[14].DB_MAX_OUTPUT_PORT_TYPE
-on_c[15] << c_bus[15].DB_MAX_OUTPUT_PORT_TYPE
-on_c[16] << c_bus[16].DB_MAX_OUTPUT_PORT_TYPE
-on_c[17] << c_bus[17].DB_MAX_OUTPUT_PORT_TYPE
-on_c[18] << c_bus[18].DB_MAX_OUTPUT_PORT_TYPE
-on_c[19] << c_bus[19].DB_MAX_OUTPUT_PORT_TYPE
-on_c[20] << c_bus[20].DB_MAX_OUTPUT_PORT_TYPE
-on_c[21] << c_bus[21].DB_MAX_OUTPUT_PORT_TYPE
-on_c[22] << c_bus[22].DB_MAX_OUTPUT_PORT_TYPE
-on_c[23] << c_bus[23].DB_MAX_OUTPUT_PORT_TYPE
-on_c[24] << c_bus[24].DB_MAX_OUTPUT_PORT_TYPE
-on_c[25] << c_bus[25].DB_MAX_OUTPUT_PORT_TYPE
-on_c[26] << c_bus[26].DB_MAX_OUTPUT_PORT_TYPE
-on_c[27] << c_bus[27].DB_MAX_OUTPUT_PORT_TYPE
-on_c[28] << c_bus[28].DB_MAX_OUTPUT_PORT_TYPE
-on_c[29] << c_bus[29].DB_MAX_OUTPUT_PORT_TYPE
-on_c[30] << c_bus[30].DB_MAX_OUTPUT_PORT_TYPE
-on_c[31] << c_bus[31].DB_MAX_OUTPUT_PORT_TYPE
-on_b[0] << b_bus[0].DB_MAX_OUTPUT_PORT_TYPE
-on_b[1] << b_bus[1].DB_MAX_OUTPUT_PORT_TYPE
-on_b[2] << b_bus[2].DB_MAX_OUTPUT_PORT_TYPE
-on_b[3] << b_bus[3].DB_MAX_OUTPUT_PORT_TYPE
-on_b[4] << b_bus[4].DB_MAX_OUTPUT_PORT_TYPE
-on_b[5] << b_bus[5].DB_MAX_OUTPUT_PORT_TYPE
-on_b[6] << b_bus[6].DB_MAX_OUTPUT_PORT_TYPE
-on_b[7] << b_bus[7].DB_MAX_OUTPUT_PORT_TYPE
-on_b[8] << b_bus[8].DB_MAX_OUTPUT_PORT_TYPE
-on_b[9] << b_bus[9].DB_MAX_OUTPUT_PORT_TYPE
-on_b[10] << b_bus[10].DB_MAX_OUTPUT_PORT_TYPE
-on_b[11] << b_bus[11].DB_MAX_OUTPUT_PORT_TYPE
-on_b[12] << b_bus[12].DB_MAX_OUTPUT_PORT_TYPE
-on_b[13] << b_bus[13].DB_MAX_OUTPUT_PORT_TYPE
-on_b[14] << b_bus[14].DB_MAX_OUTPUT_PORT_TYPE
-on_b[15] << b_bus[15].DB_MAX_OUTPUT_PORT_TYPE
-on_b[16] << b_bus[16].DB_MAX_OUTPUT_PORT_TYPE
-on_b[17] << b_bus[17].DB_MAX_OUTPUT_PORT_TYPE
-on_b[18] << b_bus[18].DB_MAX_OUTPUT_PORT_TYPE
-on_b[19] << b_bus[19].DB_MAX_OUTPUT_PORT_TYPE
-on_b[20] << b_bus[20].DB_MAX_OUTPUT_PORT_TYPE
-on_b[21] << b_bus[21].DB_MAX_OUTPUT_PORT_TYPE
-on_b[22] << b_bus[22].DB_MAX_OUTPUT_PORT_TYPE
-on_b[23] << b_bus[23].DB_MAX_OUTPUT_PORT_TYPE
-on_b[24] << b_bus[24].DB_MAX_OUTPUT_PORT_TYPE
-on_b[25] << b_bus[25].DB_MAX_OUTPUT_PORT_TYPE
-on_b[26] << b_bus[26].DB_MAX_OUTPUT_PORT_TYPE
-on_b[27] << b_bus[27].DB_MAX_OUTPUT_PORT_TYPE
-on_b[28] << b_bus[28].DB_MAX_OUTPUT_PORT_TYPE
-on_b[29] << b_bus[29].DB_MAX_OUTPUT_PORT_TYPE
-on_b[30] << b_bus[30].DB_MAX_OUTPUT_PORT_TYPE
-on_b[31] << b_bus[31].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[0] << ram_data_read[0].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[1] << ram_data_read[1].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[2] << ram_data_read[2].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[3] << ram_data_read[3].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[4] << ram_data_read[4].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[5] << ram_data_read[5].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[6] << ram_data_read[6].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[7] << ram_data_read[7].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[8] << ram_data_read[8].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[9] << ram_data_read[9].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[10] << ram_data_read[10].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[11] << ram_data_read[11].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[12] << ram_data_read[12].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[13] << ram_data_read[13].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[14] << ram_data_read[14].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[15] << ram_data_read[15].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[16] << ram_data_read[16].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[17] << ram_data_read[17].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[18] << ram_data_read[18].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[19] << ram_data_read[19].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[20] << ram_data_read[20].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[21] << ram_data_read[21].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[22] << ram_data_read[22].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[23] << ram_data_read[23].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[24] << ram_data_read[24].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[25] << ram_data_read[25].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[26] << ram_data_read[26].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[27] << ram_data_read[27].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[28] << ram_data_read[28].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[29] << ram_data_read[29].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[30] << ram_data_read[30].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_read[31] << ram_data_read[31].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[0] << ram_data_write[0].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[1] << ram_data_write[1].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[2] << ram_data_write[2].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[3] << ram_data_write[3].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[4] << ram_data_write[4].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[5] << ram_data_write[5].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[6] << ram_data_write[6].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[7] << ram_data_write[7].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[8] << ram_data_write[8].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[9] << ram_data_write[9].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[10] << ram_data_write[10].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[11] << ram_data_write[11].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[12] << ram_data_write[12].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[13] << ram_data_write[13].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[14] << ram_data_write[14].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[15] << ram_data_write[15].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[16] << ram_data_write[16].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[17] << ram_data_write[17].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[18] << ram_data_write[18].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[19] << ram_data_write[19].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[20] << ram_data_write[20].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[21] << ram_data_write[21].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[22] << ram_data_write[22].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[23] << ram_data_write[23].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[24] << ram_data_write[24].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[25] << ram_data_write[25].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[26] << ram_data_write[26].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[27] << ram_data_write[27].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[28] << ram_data_write[28].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[29] << ram_data_write[29].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[30] << ram_data_write[30].DB_MAX_OUTPUT_PORT_TYPE
-on_ram_write[31] << ram_data_write[31].DB_MAX_OUTPUT_PORT_TYPE
+on_c[0] <= c_bus[0].DB_MAX_OUTPUT_PORT_TYPE
+on_c[1] <= c_bus[1].DB_MAX_OUTPUT_PORT_TYPE
+on_c[2] <= c_bus[2].DB_MAX_OUTPUT_PORT_TYPE
+on_c[3] <= c_bus[3].DB_MAX_OUTPUT_PORT_TYPE
+on_c[4] <= c_bus[4].DB_MAX_OUTPUT_PORT_TYPE
+on_c[5] <= c_bus[5].DB_MAX_OUTPUT_PORT_TYPE
+on_c[6] <= c_bus[6].DB_MAX_OUTPUT_PORT_TYPE
+on_c[7] <= c_bus[7].DB_MAX_OUTPUT_PORT_TYPE
+on_c[8] <= c_bus[8].DB_MAX_OUTPUT_PORT_TYPE
+on_c[9] <= c_bus[9].DB_MAX_OUTPUT_PORT_TYPE
+on_c[10] <= c_bus[10].DB_MAX_OUTPUT_PORT_TYPE
+on_c[11] <= c_bus[11].DB_MAX_OUTPUT_PORT_TYPE
+on_c[12] <= c_bus[12].DB_MAX_OUTPUT_PORT_TYPE
+on_c[13] <= c_bus[13].DB_MAX_OUTPUT_PORT_TYPE
+on_c[14] <= c_bus[14].DB_MAX_OUTPUT_PORT_TYPE
+on_c[15] <= c_bus[15].DB_MAX_OUTPUT_PORT_TYPE
+on_c[16] <= c_bus[16].DB_MAX_OUTPUT_PORT_TYPE
+on_c[17] <= c_bus[17].DB_MAX_OUTPUT_PORT_TYPE
+on_c[18] <= c_bus[18].DB_MAX_OUTPUT_PORT_TYPE
+on_c[19] <= c_bus[19].DB_MAX_OUTPUT_PORT_TYPE
+on_c[20] <= c_bus[20].DB_MAX_OUTPUT_PORT_TYPE
+on_c[21] <= c_bus[21].DB_MAX_OUTPUT_PORT_TYPE
+on_c[22] <= c_bus[22].DB_MAX_OUTPUT_PORT_TYPE
+on_c[23] <= c_bus[23].DB_MAX_OUTPUT_PORT_TYPE
+on_c[24] <= c_bus[24].DB_MAX_OUTPUT_PORT_TYPE
+on_c[25] <= c_bus[25].DB_MAX_OUTPUT_PORT_TYPE
+on_c[26] <= c_bus[26].DB_MAX_OUTPUT_PORT_TYPE
+on_c[27] <= c_bus[27].DB_MAX_OUTPUT_PORT_TYPE
+on_c[28] <= c_bus[28].DB_MAX_OUTPUT_PORT_TYPE
+on_c[29] <= c_bus[29].DB_MAX_OUTPUT_PORT_TYPE
+on_c[30] <= c_bus[30].DB_MAX_OUTPUT_PORT_TYPE
+on_c[31] <= c_bus[31].DB_MAX_OUTPUT_PORT_TYPE
+on_b[0] <= b_bus[0].DB_MAX_OUTPUT_PORT_TYPE
+on_b[1] <= b_bus[1].DB_MAX_OUTPUT_PORT_TYPE
+on_b[2] <= b_bus[2].DB_MAX_OUTPUT_PORT_TYPE
+on_b[3] <= b_bus[3].DB_MAX_OUTPUT_PORT_TYPE
+on_b[4] <= b_bus[4].DB_MAX_OUTPUT_PORT_TYPE
+on_b[5] <= b_bus[5].DB_MAX_OUTPUT_PORT_TYPE
+on_b[6] <= b_bus[6].DB_MAX_OUTPUT_PORT_TYPE
+on_b[7] <= b_bus[7].DB_MAX_OUTPUT_PORT_TYPE
+on_b[8] <= b_bus[8].DB_MAX_OUTPUT_PORT_TYPE
+on_b[9] <= b_bus[9].DB_MAX_OUTPUT_PORT_TYPE
+on_b[10] <= b_bus[10].DB_MAX_OUTPUT_PORT_TYPE
+on_b[11] <= b_bus[11].DB_MAX_OUTPUT_PORT_TYPE
+on_b[12] <= b_bus[12].DB_MAX_OUTPUT_PORT_TYPE
+on_b[13] <= b_bus[13].DB_MAX_OUTPUT_PORT_TYPE
+on_b[14] <= b_bus[14].DB_MAX_OUTPUT_PORT_TYPE
+on_b[15] <= b_bus[15].DB_MAX_OUTPUT_PORT_TYPE
+on_b[16] <= b_bus[16].DB_MAX_OUTPUT_PORT_TYPE
+on_b[17] <= b_bus[17].DB_MAX_OUTPUT_PORT_TYPE
+on_b[18] <= b_bus[18].DB_MAX_OUTPUT_PORT_TYPE
+on_b[19] <= b_bus[19].DB_MAX_OUTPUT_PORT_TYPE
+on_b[20] <= b_bus[20].DB_MAX_OUTPUT_PORT_TYPE
+on_b[21] <= b_bus[21].DB_MAX_OUTPUT_PORT_TYPE
+on_b[22] <= b_bus[22].DB_MAX_OUTPUT_PORT_TYPE
+on_b[23] <= b_bus[23].DB_MAX_OUTPUT_PORT_TYPE
+on_b[24] <= b_bus[24].DB_MAX_OUTPUT_PORT_TYPE
+on_b[25] <= b_bus[25].DB_MAX_OUTPUT_PORT_TYPE
+on_b[26] <= b_bus[26].DB_MAX_OUTPUT_PORT_TYPE
+on_b[27] <= b_bus[27].DB_MAX_OUTPUT_PORT_TYPE
+on_b[28] <= b_bus[28].DB_MAX_OUTPUT_PORT_TYPE
+on_b[29] <= b_bus[29].DB_MAX_OUTPUT_PORT_TYPE
+on_b[30] <= b_bus[30].DB_MAX_OUTPUT_PORT_TYPE
+on_b[31] <= b_bus[31].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[0] <= ram_data_read[0].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[1] <= ram_data_read[1].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[2] <= ram_data_read[2].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[3] <= ram_data_read[3].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[4] <= ram_data_read[4].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[5] <= ram_data_read[5].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[6] <= ram_data_read[6].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[7] <= ram_data_read[7].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[8] <= ram_data_read[8].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[9] <= ram_data_read[9].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[10] <= ram_data_read[10].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[11] <= ram_data_read[11].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[12] <= ram_data_read[12].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[13] <= ram_data_read[13].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[14] <= ram_data_read[14].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[15] <= ram_data_read[15].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[16] <= ram_data_read[16].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[17] <= ram_data_read[17].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[18] <= ram_data_read[18].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[19] <= ram_data_read[19].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[20] <= ram_data_read[20].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[21] <= ram_data_read[21].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[22] <= ram_data_read[22].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[23] <= ram_data_read[23].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[24] <= ram_data_read[24].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[25] <= ram_data_read[25].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[26] <= ram_data_read[26].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[27] <= ram_data_read[27].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[28] <= ram_data_read[28].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[29] <= ram_data_read[29].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[30] <= ram_data_read[30].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_read[31] <= ram_data_read[31].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[0] <= ram_data_write[0].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[1] <= ram_data_write[1].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[2] <= ram_data_write[2].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[3] <= ram_data_write[3].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[4] <= ram_data_write[4].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[5] <= ram_data_write[5].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[6] <= ram_data_write[6].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[7] <= ram_data_write[7].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[8] <= ram_data_write[8].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[9] <= ram_data_write[9].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[10] <= ram_data_write[10].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[11] <= ram_data_write[11].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[12] <= ram_data_write[12].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[13] <= ram_data_write[13].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[14] <= ram_data_write[14].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[15] <= ram_data_write[15].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[16] <= ram_data_write[16].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[17] <= ram_data_write[17].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[18] <= ram_data_write[18].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[19] <= ram_data_write[19].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[20] <= ram_data_write[20].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[21] <= ram_data_write[21].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[22] <= ram_data_write[22].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[23] <= ram_data_write[23].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[24] <= ram_data_write[24].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[25] <= ram_data_write[25].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[26] <= ram_data_write[26].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[27] <= ram_data_write[27].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[28] <= ram_data_write[28].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[29] <= ram_data_write[29].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[30] <= ram_data_write[30].DB_MAX_OUTPUT_PORT_TYPE
+on_ram_write[31] <= ram_data_write[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers
+|cpu_fpga|cpu:dut|banco_registradores:registers
 clock => clock.IN11
 bbus_sig[0] => bbus_sig[0].IN1
 bbus_sig[1] => bbus_sig[1].IN1
@@ -348,7 +373,7 @@ mbr_data[30] <= register:MBR.data_out
 mbr_data[31] <= register:MBR.data_out
 
 
-|cpu|banco_registradores:registers|decod4_16:decod
+|cpu_fpga|cpu:dut|banco_registradores:registers|decod4_16:decod
 clock => s[0]~reg0.CLK
 clock => s[1]~reg0.CLK
 clock => s[2]~reg0.CLK
@@ -387,7 +412,7 @@ s[14] <= s[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 s[15] <= s[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:MAR
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:MAR
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -550,7 +575,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:MDR
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:MDR
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -713,7 +738,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:PC
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:PC
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -876,7 +901,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:MBR
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:MBR
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -1039,7 +1064,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:SP
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:SP
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -1202,7 +1227,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:LV
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:LV
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -1365,7 +1390,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:CPP
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:CPP
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -1528,7 +1553,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:TOS
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:TOS
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -1691,7 +1716,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:OPC
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:OPC
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -1854,7 +1879,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|banco_registradores:registers|register:H
+|cpu_fpga|cpu:dut|banco_registradores:registers|register:H
 clock => data[0].CLK
 clock => data[1].CLK
 clock => data[2].CLK
@@ -2017,7 +2042,7 @@ data_out[30] <= data_out[30].DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|ram:ram_mem
+|cpu_fpga|cpu:dut|ram:ram_mem
 address_write[0] => memory.waddr_a[0].DATAIN
 address_write[0] => memory.WADDR
 address_write[1] => memory.waddr_a[1].DATAIN
@@ -2198,7 +2223,7 @@ read_enable => data_read[30]~reg0.CLK
 read_enable => data_read[31]~reg0.CLK
 
 
-|cpu|ula:alu
+|cpu_fpga|cpu:dut|ula:alu
 ulacode[0] => Mux0.IN69
 ulacode[0] => Mux1.IN69
 ulacode[0] => Mux2.IN69
@@ -4473,7 +4498,7 @@ data_out[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|cpu|shifter:shifter
+|cpu_fpga|cpu:dut|shifter:shifter
 control[0] => Equal0.IN3
 control[0] => Equal1.IN3
 control[1] => Equal0.IN2
