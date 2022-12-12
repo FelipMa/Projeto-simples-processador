@@ -9,18 +9,18 @@ s6 => Decoder0.IN5
 s7 => Decoder0.IN6
 s8 => Decoder0.IN7
 s9 => Decoder0.IN8
-led1 <= cpu:dut.on_c
-led2 <= cpu:dut.on_c
-led3 <= cpu:dut.on_c
-led4 <= cpu:dut.on_b
-led5 <= cpu:dut.on_b
-led6 <= cpu:dut.on_b
-led7 <= cpu:dut.on_ram_read
-led8 <= cpu:dut.on_ram_read
-led9 <= cpu:dut.on_ram_read
-led10 <= cpu:dut.on_ram_write
-led11 <= cpu:dut.on_ram_write
-led12 <= cpu:dut.on_ram_write
+led1 << cpu:dut.on_c
+led2 << cpu:dut.on_c
+led3 << cpu:dut.on_c
+led4 << cpu:dut.on_b
+led5 << cpu:dut.on_b
+led6 << cpu:dut.on_b
+led7 << cpu:dut.on_ram_read
+led8 << cpu:dut.on_ram_read
+led9 << cpu:dut.on_ram_read
+led10 << cpu:dut.on_ram_write
+led11 << cpu:dut.on_ram_write
+led12 << cpu:dut.on_ram_write
 
 
 |cpu_fpga|cpu:dut
