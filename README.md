@@ -50,4 +50,4 @@ O deslocador (shifter), opera o dado recebido da ula e o envia para o barramento
 
 Função da memória:
 
-Armazenar os dados recebidos pelo MAR em um endereço específico (recebido pelo PC).
+A RAM recebe os dados de endereço e de write/read, então envia ou armazena o dado de acordo com a instrução recebida.
